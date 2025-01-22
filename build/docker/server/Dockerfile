@@ -12,7 +12,7 @@ RUN sudo chown -R opam:nogroup . && \
     opam config exec make build && \
     opam depext -ln reader > depexts
 
-FROM alpine
+FROM alpine:3.18
 WORKDIR /app
 COPY --from=0 /home/opam/server/_build/default/bin/ .
 
