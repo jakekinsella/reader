@@ -11,14 +11,14 @@ import { Feed } from '../../models/feed';
 import { Board } from '../../models/board';
 import Boards from '../../api/boards';
 import UserFeeds from '../../api/user-feeds';
-import { colors } from '../../constants';
+import { Colors } from '../../constants';
 
 const Toolbar = styled.div`
   position: fixed;
   display: flex;
   align-items: center;
 
-  background-color: white;
+  background-color: ${Colors.Container.background};
 
   width: 100%;
   height: 50px;
@@ -26,9 +26,9 @@ const Toolbar = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 
-  border-bottom: 1px solid ${colors.black};
+  border-bottom: 1px solid ${Colors.Container.border};
 
-  box-shadow: 0px 0px 1px ${colors.lightBlack};
+  box-shadow: 0px 0px 1px ${Colors.Container.shadow};
 
   justify-content: space-between
 `;
@@ -40,16 +40,16 @@ const More = styled.div`
 
 const DeleteButton = styled.div`
   cursor: pointer;
-  color: ${colors.black};
+  color: ${Colors.Text.base};
 
   &:hover {
-    color: ${colors.red};
+    color: ${Colors.Base.red};
   }
 `;
 
 const Title = styled.div`
   font-size: 20px;
-  color: ${colors.black};
+  color: ${Colors.Text.base};
 `;
 
 const Spacer = styled.div`

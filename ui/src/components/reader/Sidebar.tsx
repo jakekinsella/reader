@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import { colors } from '../../constants';
+import { Colors } from '../../constants';
 import { Board } from '../../models/board';
 import { Feed } from '../../models/feed';
 
@@ -14,7 +14,7 @@ const Divider = styled.hr`
   margin-left: 5px;
   margin-right: 5px;
   border: 0;
-  border-top: 1px solid ${colors.black};
+  border-top: 1px solid ${Colors.Container.border};
 `;
 
 const Spacer = styled.div`
@@ -39,13 +39,13 @@ const ClickableHeader = styled.a`
 
   text-decoration: none;
   font-size: 18px;
-  color: ${colors.black};
+  color: ${Colors.Text.base};
 
   cursor: pointer;
 
   &:hover {
     text-decoration: none;
-    color: black;
+    color: ${Colors.Text.hover};
   }
 
   &:visited {
@@ -64,13 +64,13 @@ const Item = styled.a`
 
   text-decoration: none;
   font-size: 15px;
-  color: ${colors.black};
+  color: ${Colors.Text.base};
 
   cursor: pointer;
 
   &:hover {
     text-decoration: none;
-    color: black;
+    color: ${Colors.Text.hover};
   }
 
   &:visited {

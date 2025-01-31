@@ -13,7 +13,7 @@ import { Board } from '../../models/board';
 import Boards from '../../api/boards';
 import UserFeeds from '../../api/user-feeds';
 import Feeds from '../../api/feeds';
-import { colors } from '../../constants';
+import { Colors } from '../../constants';
 
 const Root = styled.div`
   display: flex;
@@ -35,10 +35,10 @@ const SidebarPaneInner = styled.div`
   position: fixed;
   overflow-x: hidden;
   overflow-y: scroll;
-  border-right: 1px solid ${colors.black};
+  border-right: 1px solid ${Colors.Container.border};
 
-  background-color: white;
-  box-shadow: 0px 0px 1px ${colors.lightBlack};
+  background-color: transparent;
+  box-shadow: 0px 0px 1px ${Colors.Container.shadow};
 `;
 
 const MainPane = styled.div`

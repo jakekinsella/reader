@@ -10,7 +10,7 @@ import UserItems from '../../api/user-items';
 import { Item } from '../../models/item';
 import { Feed } from '../../models/feed';
 import { Board } from '../../models/board';
-import { colors } from '../../constants';
+import { Colors } from '../../constants';
 
 const Container = styled.a`
   display: block;
@@ -21,21 +21,21 @@ const Container = styled.a`
   padding-right: 10px;
 
   text-decoration: none;
-  color: ${colors.black};
-  background-color: white;
+  color: ${Colors.Text.base};
+  background-color: transparent;
 
   cursor: pointer;
 
   &:hover {
-    background-color: ${colors.whiteHover};
+    background-color: ${Colors.Text.Inverted.hover};
   }
 `;
 
 const readContainer = css`
-  background-color: ${colors.whiteActive} !important;
+  background-color: ${Colors.Text.Inverted.hover} !important;
 
   &:hover {
-    background-color: ${colors.lightGray} !important;
+    background-color: ${Colors.Text.Inverted.active} !important;
   }
 `;
 
@@ -47,7 +47,7 @@ const ContainerInner = styled.div`
   padding-right: 20px;
   padding-bottom: 35px;
 
-  border-bottom: 1px solid ${colors.black};
+  border-bottom: 1px solid ${Colors.Container.border};
 `;
 
 const TitleContainer = styled.div`
@@ -61,21 +61,21 @@ const Title = styled.div`
   max-width: 700px;
 
   font-size: 18px;
-  color: ${colors.black};
+  color: ${Colors.Text.base};
 `
 
 const Subtitle = styled.div`
   max-width: 700px;
 
   font-size: 15px;
-  color: ${colors.black2};
+  color: ${Colors.Text.Faint.base};
 
   padding-top: 2px;
   padding-bottom: 5px;
 `
 
 const Options = styled.div`
-  color: ${colors.black};
+  color: ${Colors.Text.base};
 `;
 
 const OptionsItem = styled.span`
@@ -83,13 +83,13 @@ const OptionsItem = styled.span`
   font-size: 1.4em;
 
   &:hover {
-    color: black;
+    color: ${Colors.Text.hover};
   }
 `;
 
 const removeIcon = css`
   &:hover {
-    color: ${colors.red} !important;
+    color: ${Colors.Base.red} !important;
   }
 `;
 
@@ -104,7 +104,7 @@ const Description = styled.div`
   padding-right: 5px;
 
   font-size: 14px;
-  color: ${colors.black2};
+  color: ${Colors.Text.Faint.base};
 `
 
 interface Props {

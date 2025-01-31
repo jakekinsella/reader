@@ -6,7 +6,7 @@ import { Redirect } from 'central';
 
 import Reader from './components/reader/Reader';
 
-import { colors, login } from './constants';
+import { Colors, login } from './constants';
 
 const Root = styled.div`
   position: relative;
@@ -17,7 +17,7 @@ const Root = styled.div`
   width: 100%;
   height: 100%;
 
-  color: ${colors.black};
+  color: ${Colors.Text.base};
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 `;
